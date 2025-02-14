@@ -1,0 +1,158 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Concert+One:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap'); */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 
+html{
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}
+body{
+    /* background: rgb(107, 45, 45); */
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background: linear-gradient(120deg,rgba(16, 125, 198, 0.688),rgba(127, 237, 249, 0.601)), 
+    url('pexels-fotios-photos-1107717.jpg');
+    
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% 1000px;
+    font-size: 13px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+            
+            position: fixed;
+            bottom: 0px;
+            color: rgb(36, 7, 70);
+            font-family:'Poppins', sans-serif;;
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+
+}
+@keyframes pump{
+    0% {font-size: 110%;}
+    50% {font-size: 150%;}
+    100% {font-size:  110%;}
+}
+.footer b{
+    color: #df69bc;
+    animation: pump 1s;
+    animation-iteration-count: infinite;
+}
+.header h1{
+    color:rgb(24, 5, 43);
+    text-decoration:underline;
+    font-family:'Poppins', sans-serif;;
+    font-size:35px;
+    
+}
+#input{
+    font-size: 18px;
+    padding: 5px 10px;
+    outline:auto;
+    border:2px;
+    border-radius: 15px;
+    background:rgb(241, 238, 246);
+}
+#search{
+    background: none;
+    padding: 5px 20px;
+    color:rgb(211, 179, 211);
+    outline:auto;
+    background:rgb(38, 3, 58);
+    font-size: 17px;
+    border-radius: 5px;
+    cursor:pointer;
+    border: none;
+}
+.weather{
+    text-align: center;
+    color:rgb(36, 4, 44);
+    
+}
+#city{
+    font-size: 30px;
+
+}
+.weather img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(109, 69, 122, 0.18);
+}
+#temperature{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.temp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+#clouds{
+    font-size: 20px;
+    background: rgba(216, 192, 235, 0.662);
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+main{
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    margin: 0 50px;
+    color: rgb(251, 232, 252);
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.next p,.next h3{
+    margin: 3px 0;
+}
+.forecstD{
+    margin: 20px 50px;
+    color: rgba(243, 245, 249, 0.778);
+}
+.weekF{
+    display: grid;
+    grid-template-columns: repeat(5,5fr);
+}
+.cast-header{
+    color: rgba(3, 7, 43, 0.959);
+    background: rgba(215, 191, 231, 0.539);
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.divider1,.divider2{
+    background: rgba(17, 0, 21, 0.696);
+    height: 350px;
+    border-radius: 4px;
+}
+.divider2{
+    height: 4px;
+    width: 100%;
+    margin: 0 auto;
+}
+.time,.date{
+    color: rgb(29, 5, 51);
+}
+.desc{
+    color: rgb(2, 19, 46);
+}
